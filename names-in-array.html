@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Имена в массиве</title>
+</head>
+<body>
+	
+
+
+
+	
+<!-- ДЗ2 -->
+<script>
+
+
+	// объявил массив
+	var arrNames = [];
+
+	// заполнил его значения
+	for (i=1; i<=5; i++){
+		arrNames[i] = prompt('Введите имя №' + i);	
+	}
+
+
+	// спросил имя юзера
+	var userName = prompt ('Введите ваше имя');
+
+
+	// проверил есть ли имя юзера в массиве
+	var test = false; //значение проверки ползователя по умолчанию
+
+	for (i=0; i<arrNames.length; i++){
+		if (userName === arrNames[i]) {
+			test = true;
+		}
+	}
+
+
+	// вывел результат исходя из проверки
+	if (test) {
+		alert(userName + ', вы  успешно вошли в систему.');
+	} else {
+		alert('Вход запрещен.');
+	}
+
+
+
+</script>
+
+
+</body>
+</html>
