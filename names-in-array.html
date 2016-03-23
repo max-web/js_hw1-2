@@ -14,11 +14,13 @@
 <script>
 
 
-	// объявил массив
+	// объявил массив 
 	var arrNames = [];
+	
+
 
 	// заполнил его значения
-	for (i=1; i<=5; i++){
+	for (var i=1; i<=5; i++){
 		arrNames[i] = prompt('Введите имя №' + i);	
 	}
 
@@ -30,8 +32,8 @@
 	// проверил есть ли имя юзера в массиве
 	var test = false; //значение проверки ползователя по умолчанию
 
-	for (i=0; i<arrNames.length; i++){
-		if (userName === arrNames[i]) {
+	for (var j=0; j<arrNames.length; j++){
+		if (userName === arrNames[j]) {
 			test = true;
 		}
 	}
